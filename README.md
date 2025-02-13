@@ -1,41 +1,33 @@
-─(lemma㉿HarshalAbdulla)-[/mnt/c/Users/harsh/study/internet solutions]
-└─$ git init
+how to setup git hub and start a repository;
+Basic Commands
 
-Initialized empty Git repository in /mnt/c/Users/harsh/study/internet solutions/.git/
+git init – Initialize a new Git repository
+git clone <repo_url> – Clone an existing repository
+git status – Check the status of your working directory
+git add <file> – Stage a specific file
+git add . – Stage all changes
 
+Committing & Pushing
 
-┌──(lemma㉿HarshalAbdulla)-[/mnt/c/Users/harsh/study/internet solutions]
-└─$ git remote add origin https://github.com/Harshal-Abdulla/internet-solution.git
+git commit -m "message" – Commit staged changes with a message
+git push origin <branch> – Push commits to a remote branch
+git push -u origin <branch> – Push and set upstream branch
 
-┌──(lemma㉿HarshalAbdulla)-[/mnt/c/Users/harsh/study/internet solutions]
-└─$ git status
-On branch master
+Branching & Merging
 
-No commits yet
+git branch – List branches
+git branch <branch-name> – Create a new branch
+git checkout <branch> – Switch to a branch
+git switch <branch> – (Newer alternative to checkout)
+git merge <branch> – Merge a branch into the current one
 
-nothing to commit (create/copy files and use "git add" to track)
+Pulling & Fetching
 
-(lemma㉿HarshalAbdulla)-[/mnt/c/Users/harsh/study/internet solutions]
-└─$ git status
-On branch master
+git pull origin <branch> – Fetch and merge changes from a remote branch
+git fetch – Fetch latest changes without merging
 
-No commits yet
+Undoing Changes
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        readme.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-┌──(lemma㉿HarshalAbdulla)-[/mnt/c/Users/harsh/study/internet solutions]
-└─$ git add readme.txt
-
-┌──(lemma㉿HarshalAbdulla)-[/mnt/c/Users/harsh/study/internet solutions]
-└─$ git status
-On branch master
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   readme.txt
+git reset <file> – Unstage a file
+git reset --hard <commit> – Reset everything to a specific commit
+git revert <commit> – Create a new commit that undoes a previous commit
